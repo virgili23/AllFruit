@@ -15,7 +15,13 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
 }
-
+ .frontintro p {
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;
+    line-height: 2em;
+    text-shadow: .3px .3px black;
+ }
 
 /* landing page */
 
@@ -129,9 +135,9 @@ body {
     background-size: cover;
 }
 .footer {
-    background: #f1f1f1;
+    /* background: red; */
     width: 100vw;
-    height: 50px;
+    /* height: 50px; */
 }
 
 /* Navigation */
@@ -148,10 +154,11 @@ body {
 
 }
 div.navigation {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
 }
 ul {
     list-style-type: none;
+    /* background: red; */
     margin: 0;
     margin-right: 3%;
     padding: 0;
@@ -192,8 +199,7 @@ li.dropdown {
     position: absolute;
     background-color:#b35900;
     min-width: 160px;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     transition: 1s;
@@ -212,11 +218,26 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #1aff1a;
+    background-color: #00ff00;
+    border-radius: 5px;
     transition: ease 0.5s;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     transition: 0.5s;
+}
+
+
+/* FRONT INTRO */
+
+.frontintro {
+
+    margin: 0 auto;
+    margin-top: 30vh;
+    padding: 0;
+    width: 70vw;
+    height: 40vh;
+    /* background: blue; */
+
 }
