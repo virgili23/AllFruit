@@ -14,13 +14,22 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     overflow-x: hidden;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
 }
  .frontintro p {
-    color: #f1f1f1;
+    /* color: #f1f1f1; */
+    /* color: #604020; */
+    color: #ffffcc;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
     letter-spacing: .1em;
-    line-height: 2em;
-    text-shadow: .3px .3px black;
+    line-height: 1.7em;
+    text-shadow: .5px .4px #604020;
+    transition: ease 2s;
  }
 
 /* landing page */
@@ -138,11 +147,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.footer {
-    /* background: red; */
-    width: 100vw;
-    /* height: 50px; */
-}
+
 
 /* Navigation */
 
@@ -244,4 +249,102 @@ li.dropdown {
     height: 40vh;
     /* background: blue; */
 
+}
+
+
+
+
+
+
+/* footer and MAILCHIMP */
+
+.footer {
+    /* background: blue; */
+    width: 100vw;
+    height: 70vh;
+    /* height: 50px; */
+}
+
+.footer-wrap {
+    /* background: green; */
+    width: 80%;
+    height: 90%;
+    padding-top: 10vh; 
+    margin: auto;
+}
+
+
+/* for the title that says subscribe to newsletter */
+.newsletter {
+    color: #b35900;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+/* email and submit button features below */
+
+/* The whole DIV */
+#mc_embed_signup {
+    /* background: violet; */
+    /* display: inline; */
+    padding: 10vh 0;
+    margin: 0 auto;
+    /* clear: left;  */
+    font: 14px Helvetica,Arial,sans-serif; 
+    width: 100%;
+}
+
+
+/* The area for the email and submit buttons */
+#mc_embed_signup_scroll {
+
+    width: 400px;
+    position: relative;
+    left: 30%;
+    padding: 30px 0px;
+    /* background: yellow; */
+    /* display: inline; */
+
+}
+.email {
+    padding: 5px 15px;
+}
+
+input[type=email] {
+   
+    outline: none;
+    padding: 8px 100px 8px 5px;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+input[type=email]:focus {
+
+    border: 1px solid #555;
+}
+
+/* the subscribe button */
+
+.clear {
+    float: right;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 2px solid #4caf50;
+    border-radius: 10px;
+    color: white;
+}
+#mc-embedded-subscribe {
+    /* float: right; */
+    /* margin: 0; */
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
 }
