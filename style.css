@@ -20,17 +20,6 @@ body {
 h1 {
     margin: 0;
 }
- .frontintro p {
-    /* color: #f1f1f1; */
-    /* color: #604020; */
-    color: #ffffcc;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    line-height: 1.7em;
-    text-shadow: .5px .4px #604020;
-    transition: ease 2s;
- }
 
 /* landing page */
 
@@ -109,7 +98,7 @@ h1 {
     
 }
 .btn {
-    background: #1aff1a;
+    background: #00cc00;
     color: #fff;
     font-size: 2rem;
     padding: 0.5rem 2rem;
@@ -121,7 +110,7 @@ h1 {
 } 
 
 .btn:hover {
-    background: #b35900;
+    background: #bf8040;
     transition: 0.5s ease;
 }
 
@@ -141,16 +130,37 @@ h1 {
 /* positions are placeholder for these two */
 .page {
     /* background-image: url("main\ page.jpg"); */
+    z-index: -2;
     background-image: url('grassfield.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* ul li a {
+    z-index: 1;
+} */
+
+.main-overlay {
+
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #225470; */
+    background-color: #333;
+    opacity: 0.45;
+}
 
 
 /* Navigation */
+.navigation {
 
+    z-index: 1;
+    position: relative;
+}
 
 .title-card {
     position: absolute;
@@ -206,7 +216,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:#b35900;
+    background-color: #cc9966;
     min-width: 160px;
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -227,7 +237,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #00ff00;
+    background-color: #00cc00;
     border-radius: 5px;
     transition: ease 0.5s;
 }
@@ -240,7 +250,7 @@ li.dropdown {
 
 /* FRONT INTRO */
 
-.frontintro {
+.frontintro-div {
 
     margin: 0 auto;
     margin-top: 30vh;
@@ -249,6 +259,19 @@ li.dropdown {
     height: 40vh;
     /* background: blue; */
 
+}
+.fronttitle {
+    font-family: 'Josefin Sans';
+    color: #ffffcc;
+}
+.frontp {
+    font-family: 'Crimson Text', serif;
+    color: #ffffcc;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    line-height: 1.7em;
+    text-shadow: .5px .4px #604020;
+    transition: ease 2s;
 }
 
 
@@ -269,6 +292,7 @@ li.dropdown {
     width: 100vw;
     height: 70vh;
     /* height: 50px; */
+    background-color: #f9f2ec;
 }
 
 .footer-wrap {
@@ -282,7 +306,7 @@ li.dropdown {
 
 /* for the title that says subscribe to newsletter */
 .newsletter {
-    color: #b35900;
+    color: #bf8040;
     text-align: center;
     font-size: 3em;
 }
@@ -384,12 +408,14 @@ input[type=submit] {
     }
 
     /* the paragraph */
-    .frontintro {
+
+
+    .frontintro-div {
 
         /* margin-top: 10vh; */
         padding: 0;
         width: 90vw;
-        margin-top: 10px;
+        margin-top: 10%;
         /* height: 40vh; */
         line-height: 1px;
         /* background: blue; */
