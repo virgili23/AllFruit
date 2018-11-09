@@ -1,25 +1,48 @@
+ /* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////// - Code Block -///////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+ 
+ 
+ 
+ 
+ /* Global Properties */
+
+ 
  * {
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-    color: black;
+
+
+h1 {
+    margin: 0;
 }
 
+p {
+    font-family: "Crimson Text";
+    letter-spacing: 1.1px;
+    font-size: 1.1em;
+}
 body {
     margin: 0;
     /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'courgette'; */
     font-family: 'itim';
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     overflow-x: hidden;
     text-align: center;
 }
-
-h1 {
-    margin: 0;
-}
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////// - Code Block -///////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
 
 /* landing page */
 
@@ -37,7 +60,9 @@ h1 {
     margin: auto;
     text-align: center;
 }
-
+.myvideo {
+    z-index: -1;
+}
 .fullscreen-video-wrap {
     position: absolute;
     top:0;
@@ -98,7 +123,8 @@ h1 {
     
 }
 .btn {
-    background: #00cc00;
+    /* background: #00cc00; */
+    background: #99cc00;
     color: #fff;
     font-size: 2rem;
     padding: 0.5rem 2rem;
@@ -125,36 +151,6 @@ h1 {
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
 
-/* main page */
-
-/* positions are placeholder for these two */
-.page {
-    /* background-image: url("main\ page.jpg"); */
-    z-index: -2;
-    background-image: url('grassfield.jpg');
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* ul li a {
-    z-index: 1;
-} */
-
-.main-overlay {
-
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background: #225470; */
-    background-color: #333;
-    opacity: 0.45;
-}
-
-
 /* Navigation */
 .navigation {
 
@@ -162,10 +158,11 @@ h1 {
     position: relative;
 }
 
-.title-card {
+div.title-card a h3 {
     position: absolute;
     margin: 0 30px;
-    margin-top: 3px;
+    /* margin-top: 3px; */
+    margin-top: 30px;
     color: white;
     letter-spacing: .3em;
     font-family: 'itim';
@@ -173,7 +170,7 @@ h1 {
 
 }
 div.navigation {
-    background: rgba(0,0,0,0.3);
+    /* background: rgba(0,0,0,0.3); */
 }
 ul {
     list-style-type: none;
@@ -216,7 +213,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #cc9966;
+    background-color: #996633;
     min-width: 160px;
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -237,7 +234,8 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #00cc00;
+    /* background-color: #00cc00; */
+    background: #99cc00;
     border-radius: 5px;
     transition: ease 0.5s;
 }
@@ -247,16 +245,26 @@ li.dropdown {
     transition: 0.5s;
 }
 
+/* Navigation Ends */
 
-/* FRONT INTRO */
+
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////// - Code Block -///////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+
+/* FRONT Page INTRO */
 
 .frontintro-div {
 
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     padding: 0;
-    width: 70vw;
-    height: 40vh;
+    width: 54vw;
+    height: 50vh;
     /* background: blue; */
 
 }
@@ -268,11 +276,13 @@ li.dropdown {
     font-family: 'Crimson Text', serif;
     color: #ffffcc;
     font-size: 1.2em;
-    letter-spacing: .1em;
+    /* letter-spacing: .1em; */
     line-height: 1.7em;
-    text-shadow: .5px .4px #604020;
+    /* text-shadow: .5px .4px #604020; */
     transition: ease 2s;
 }
+
+/* Front Page Introductory paragraph ends */
 
 
 /* /////////////////////////////////////////////// */
@@ -283,16 +293,170 @@ li.dropdown {
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
 
+/* main page */
+
+/* positions are placeholder for these two */
+.page {
+    z-index: -2;
+    background-image: url('shirtandflower.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ul li a {
+    z-index: 1;
+} */
+
+.main-overlay {
+
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #225470; */
+    /* background-color: #333; */
+    background-color: #263300;
+    opacity: 0.65;
+}
+.black-overlay {
+
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    /* background: #225470; */
+    background-color: #333;
+    opacity: 0.75;
+}
+
+/* second square main page */
+
+.main-desc {
+    z-index: -2;
+    background-image: url('store.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////// - Code Block -///////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+
+/* Global features for Sub-page Paragraphs */
+
+.subpage-manifesto {
+    /* background-image: url("main\ page.jpg"); */
+    z-index: -2;
+    background-image: url('manifesto.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subpage-flowers {
+    /* background-image: url("main\ page.jpg"); */
+    z-index: -2;
+    background-image: url('flowers.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subpage-dyes {
+    /* background-image: url("main\ page.jpg"); */
+    z-index: -2;
+    background-image: url('dye-studio.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* other subpages go here */
+
+.sub-frontintro-div {
+
+    margin: 0 auto;
+    margin-top: 15vh;
+    padding: 0;
+    width: 54vw;
+    height: 50vh;
+    /* background: blue; */
+
+}
+.sub-fronttitle {
+    font-family: 'Josefin Sans';
+    text-align: center;
+    color: #ffffcc;
+    position: relative;
+    margin-top: 200px;
+}
+/* the second square */
+.subpage-intro-container {
+    margin: 0 20%;
+}
+.subpage-intro {
+    padding-top: 5%;
+    width: 100vw;
+    height: 80vh;
+    /* background: #262626; */
+    background: #e7e7e7;
+}
+.subfrontp {
+    font-family: 'Crimson Text', serif;
+    /* color: #262626; */
+    font-size: 1.2em;
+    /* letter-spacing: .1em; */
+    line-height: 1.7em;
+    /* text-shadow: .5px .4px #604020; */
+    transition: ease 2s;
+    overflow: hidden;
+}
+p.light {
+    color: #e7e7e7;
+}
+p.dark {
+    color: #262626;
+}
 
 
-/* footer and MAILCHIMP */
+
+
+/* Sub-Page paragraph features end here */
+
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////// - Code Block -///////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+
+/* footer and MAILCHIMP Features*/
 
 .footer {
     /* background: blue; */
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
     /* height: 50px; */
-    background-color: #f9f2ec;
+    background-color: #262626;
 }
 
 .footer-wrap {
@@ -305,10 +469,14 @@ li.dropdown {
 
 
 /* for the title that says subscribe to newsletter */
-.newsletter {
-    color: #bf8040;
-    text-align: center;
+.newsletter-title {
+    color: #e7e7e7;
     font-size: 3em;
+    font-family: "Josefin Sans";
+}
+.newsletter-desc {
+    color: #e7e7e7;
+    font-family: "crimson text";
 }
 
 
@@ -319,7 +487,7 @@ li.dropdown {
 #mc_embed_signup {
     /* background: violet; */
     /* display: inline; */
-    padding: 10vh 0;
+    padding: 10px 0;
     margin: 0 auto;
     /* clear: left;  */
     font: 14px Helvetica,Arial,sans-serif; 
@@ -330,10 +498,10 @@ li.dropdown {
 /* The area for the email and submit buttons */
 #mc_embed_signup_scroll {
 
-    width: 400px;
+    width: 500px;
     position: relative;
-    left: 30%;
-    padding: 30px 0px;
+    left: 28%;
+    padding: 20px 0px;
     /* background: yellow; */
     /* display: inline; */
 
@@ -345,15 +513,15 @@ li.dropdown {
 input[type=email] {
    
     outline: none;
-    padding: 8px 100px 8px 5px;
+    padding: 8px 150px 8px 5px;
     transition: 0.5s;
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input[type=email]:focus {
 
-    border: 1px solid #555;
+    border: 1px solid #4CAF50;
 }
 
 /* the subscribe button */
@@ -364,23 +532,27 @@ input[type=email]:focus {
     text-decoration: none;
 }
 
-input[type=submit] {
-    text-decoration: none;
-    cursor: pointer;
+button[type=submit] {
     background-color: #4CAF50;
-    border-radius: 2px solid #4caf50;
-    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
     color: white;
+    padding: 8px 32px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    /* border-radius: 10px; */
 }
 #mc-embedded-subscribe {
     /* float: right; */
     /* margin: 0; */
-    padding: 8px 20px 8px 20px;
-    text-decoration: none;
+    /* padding: 8px 20px 8px 20px; */
 }
 
-
-
+/* Footer and MailChimp Features End */
 
 
 
@@ -398,6 +570,12 @@ input[type=submit] {
 
 
 @media only screen and (max-width: 600px) {
+
+
+    /* make the gif show when its on mobile */
+    #myvideo-gif {
+        z-index: 0;
+    }
 
     /* the ion logo */
     .title-card {
