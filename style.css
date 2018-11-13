@@ -36,6 +36,10 @@ body {
     overflow-x: hidden;
     text-align: center;
 }
+
+ul {
+    z-index: 2;
+}
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
@@ -156,6 +160,7 @@ body {
 
     z-index: 1;
     position: relative;
+    /* position: fixed; */
 }
 
 div.title-card a h3 {
@@ -216,7 +221,7 @@ li.dropdown {
     background-color: #996633;
     min-width: 160px;
     border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
     z-index: 1;
     transition: 1s;
 }
@@ -258,13 +263,20 @@ li.dropdown {
 
 /* FRONT Page INTRO */
 
+.front-container {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    /* background: purple; */
+}
 .frontintro-div {
 
+    overflow: none;
     margin: 0 auto;
     margin-top: 20vh;
     padding: 0;
-    width: 54vw;
-    height: 50vh;
+    width: 40vw;
+    height: 60vh;
     /* background: blue; */
 
 }
@@ -280,6 +292,10 @@ li.dropdown {
     line-height: 1.7em;
     /* text-shadow: .5px .4px #604020; */
     transition: ease 2s;
+}
+.graphic {
+    width: 400px;
+    background: yellow;
 }
 
 /* Front Page Introductory paragraph ends */
@@ -298,7 +314,8 @@ li.dropdown {
 /* positions are placeholder for these two */
 .page {
     z-index: -2;
-    background-image: url('shirtandflower.jpg');
+    /* background-image: url('shirtandflower.jpg'); */
+    background-color: #333;
     background-attachment: fixed;
     height: 100vh;
     background-position: center;
@@ -360,7 +377,8 @@ li.dropdown {
 .subpage-manifesto {
     /* background-image: url("main\ page.jpg"); */
     z-index: -2;
-    background-image: url('manifesto.jpg');
+    /* background-image: url('manifesto.jpg'); */
+    background-color: #333;
     background-attachment: fixed;
     height: 100vh;
     background-position: center;
@@ -368,21 +386,64 @@ li.dropdown {
     background-size: cover;
 }
 
+/* background of flowers page */
 .subpage-flowers {
     /* background-image: url("main\ page.jpg"); */
-    z-index: -2;
-    background-image: url('flowers.jpg');
-    background-attachment: fixed;
+    z-index: -3;
+    /* background-image: url('images/smallflower.png'); */
+    /* background-color: #d9d9d9; */
+    /* green */
+    /* background-color: #99cc00; */ 
+    background-color: #996633;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
 }
+
+/* flower picture in the back */
+.subpage-flowers-background {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+}
+
+.subpage-intro {
+    /* second background */
+    position: absolute;
+    z-index: 0;
+    /* background: #1a1a1a; */
+    /* background: #333; */
+    background-color: #99cc00;
+    width: 50vw;
+    height: 100vh;
+    top: 0%;
+    right: 0;
+}
+.subpage-intro-container {
+    padding-top: 15%;
+    margin: 10px;
+}
+
+.subfrontp {
+    font-family: 'Crimson Text', serif;
+    /* color: #262626; */
+    font-size: 1.2em;
+    /* letter-spacing: .1em; */
+    line-height: 1.7em;
+    margin: 5% 1% 5% 1%;
+    transition: ease 2s;
+    overflow: hidden;
+    /* color: white; */
+    color: black;
+}
+
 
 .subpage-dyes {
     /* background-image: url("main\ page.jpg"); */
     z-index: -2;
-    background-image: url('dye-studio.jpg');
+    /* background-image: url('dye-studio.jpg'); */
+    background-color: #333;
     background-attachment: fixed;
     height: 100vh;
     background-position: center;
@@ -408,27 +469,8 @@ li.dropdown {
     position: relative;
     margin-top: 200px;
 }
-/* the second square */
-.subpage-intro-container {
-    margin: 0 20%;
-}
-.subpage-intro {
-    padding-top: 5%;
-    width: 100vw;
-    height: 80vh;
-    /* background: #262626; */
-    background: #e7e7e7;
-}
-.subfrontp {
-    font-family: 'Crimson Text', serif;
-    /* color: #262626; */
-    font-size: 1.2em;
-    /* letter-spacing: .1em; */
-    line-height: 1.7em;
-    /* text-shadow: .5px .4px #604020; */
-    transition: ease 2s;
-    overflow: hidden;
-}
+
+
 p.light {
     color: #e7e7e7;
 }
