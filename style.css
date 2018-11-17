@@ -377,8 +377,8 @@ li.dropdown {
 .subpage-manifesto {
     /* background-image: url("main\ page.jpg"); */
     z-index: -2;
-    /* background-image: url('manifesto.jpg'); */
-    background-color: #333;
+    background-image: url('/images/flowers.jpg');
+    /* background-color: #333; */
     background-attachment: fixed;
     height: 100vh;
     background-position: center;
@@ -391,10 +391,10 @@ li.dropdown {
     /* background-image: url("main\ page.jpg"); */
     z-index: -3;
     /* background-image: url('images/smallflower.png'); */
-    /* background-color: #d9d9d9; */
+    background-color: #d9d9d9;
     /* green */
     /* background-color: #99cc00; */ 
-    background-color: #996633;
+    /* background-color: #996633; */
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,9 +412,9 @@ li.dropdown {
     /* second background */
     position: absolute;
     z-index: 0;
-    /* background: #1a1a1a; */
+    background: #1a1a1a;
     /* background: #333; */
-    background-color: #99cc00;
+    /* background-color: #99cc00; */
     width: 50vw;
     height: 100vh;
     top: 0%;
@@ -434,8 +434,8 @@ li.dropdown {
     margin: 5% 1% 5% 1%;
     transition: ease 2s;
     overflow: hidden;
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
 }
 
 
