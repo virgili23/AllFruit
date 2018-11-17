@@ -76,6 +76,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 .background-image2 img {
@@ -152,4 +153,43 @@ video {
 
 .close a button:hover {
     cursor: pointer;
+}
+
+
+
+
+
+/* Mobile optimization */
+
+@media only screen and (max-width: 600px) {
+
+     .nav-container {
+        position: absolute;
+        bottom: 0;
+        right: 1;
+        left: 1;
+     /* background: blue; */
+        width: 100vw;
+        /* height: 20vh; */
+    } 
+    
+    /* navigation itself */
+    .navigation {
+        /* overflow: hidden; */
+        /* background: purple; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    
+    /* The words */
+    .navigation a {
+        float: left;
+        text-decoration: none;
+        margin: 1% 2%;
+        font-size: 0.6em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        /* color: #333; */
+        color: white;
+    }
 }
