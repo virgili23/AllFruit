@@ -11,7 +11,7 @@
 <title>In Our Nature</title>
 
 <!-- <link rel="stylesheet" href="reset.css"> -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="store.css">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
@@ -29,65 +29,7 @@
 <!-- MailCHimp -->
 <!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> -->
 
-<script type="text/javascript">
-    function ShopifyBuyInit() {
-      var client = ShopifyBuy.buildClient({
-        domain: 'embeds.myshopify.com',
-        apiKey: '952162710f94aa7b7644b14b2a94f4a3',
-        appId: '6',
-      });
-  
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: [3030475907],
-          node: document.getElementById('product-component-05cfb487fb6'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: {
-            "product": {
-              "styles": {
-                "button": {
-                  "background-color": "#262626",
-                  ":hover": {"background-color": "#464646"},
-                  ":focus": {"background-color": "#464646"}
-                },
-              }
-            }
-          }
-        });
-        // test
-        ui.createComponent('product', {
-          id: [3030475907],
-          node: document.getElementById('product-component-05cfb487fb6'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: {
-            "product": {
-              "styles": {
-                "button": {
-                  "background-color": "#99cc00",
-                  ":hover": {"background-color": "#464646"},
-                  ":focus": {"background-color": "#464646"}
-                },
-              }
-            }
-          }
-        });
-        //test
-      });
-    }
-  
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
-  
-    function loadScript() {
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = scriptURL;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-      script.onload = ShopifyBuyInit;
-    }
-  })();
-  </script>
+<script type="text/javascript" src="app.js"></script>
 
 </head>
 
@@ -96,11 +38,46 @@
 
 <body>
 
-<h1>In Our Nature Store</h1>
 
-    <div id='product-component-05cfb487fb6'></div>
+
+<div class="store page">
+
+    <div>
+      <a href="index.html"><h4>In Our Shop</h4></a>
+    </div>
+
+    <div>
+        
+
+      <!-- Shirts -->
+      <div class="section">
+        <div id='collection-component-012c84c4d76'></div>
+      </div>
+      <!-- fruits -->
+      <div class="section">
+        <div id='collection-component-0d72d8f8d8f'></div>
+      </div>
+
+      <!-- flowers -->
+      <div class="section">
+        <div id='collection-component-3972d35b452'></div>
+      </div>
+
+    </div>
+</div>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+    
   
