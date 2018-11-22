@@ -78,12 +78,14 @@
   "button": {
     "background-color": "#fff;",
     "color": "black",
-    "border": "3px solid black",
+    // "border": "3px solid black",
     ":hover": {
-      "background-color": "#000000",
-      "color": "#fff"
+      "background-color": "#fff",
+      "border": "2px solid black",
+      "color": "black"
     },
     ":focus": {
+      "outline": "none",
       "background-color": "#fff",
       "color": "black"
     }
@@ -108,6 +110,7 @@
       "background-color": "#000000"
     },
     ":focus": {
+      "outline": "none",
       "background-color": "#000000"
     }
   },
@@ -133,24 +136,27 @@
     }
   },
   // Add to Cart Button
+
   "button": {
-    // "background-color": "#000000",
     "background-color": "#fff;",
     "color": "black",
-    "border": "3px solid black",
+    // "border": "3px solid black",
     ":hover": {
-      "background-color": "#000000",
-      "color": "#fff"
+      "background-color": "#fff",
+      "border": "3px solid black",
+      "color": "black"
     },
     ":focus": {
-      "background-color": "#000000",
-      "color": "#fff"
+      // "outline": "none",
+      "background-color": "#fff",
+      "color": "black"
     }
   },
   "title": {
     "font-size": "28px"
   },
   "description": {
+    "margin-top": "20px",
     "font-size": "15px"
   }
 }
@@ -163,7 +169,9 @@
       "background-color": "#000000"
     },
     ":focus": {
+      "outline": "none",
       "background-color": "#000000"
+      
     }
   }
 }
