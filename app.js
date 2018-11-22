@@ -90,11 +90,11 @@
 "contents": {
   "button": true
 },
+"popup": false,
 "styles": {
   "cart": {
     "background-color": "#fcf7f7"
   },
-  "popup": false,
   "button": {
     "background-color": "#000000",
     ":hover": {
