@@ -72,13 +72,20 @@
       "top": "0"
     }
   },
+  // View Product
+
+
   "button": {
-    "background-color": "#000000",
+    "background-color": "#fff;",
+    "color": "black",
+    "border": "3px solid black",
     ":hover": {
-      "background-color": "#000000"
+      "background-color": "#000000",
+      "color": "#fff"
     },
     ":focus": {
-      "background-color": "#000000"
+      "background-color": "#fff",
+      "color": "black"
     }
   },
   "description": {
@@ -125,13 +132,19 @@
       "margin-bottom": "0px"
     }
   },
+  // Add to Cart Button
   "button": {
-    "background-color": "#000000",
+    // "background-color": "#000000",
+    "background-color": "#fff;",
+    "color": "black",
+    "border": "3px solid black",
     ":hover": {
-      "background-color": "#000000"
+      "background-color": "#000000",
+      "color": "#fff"
     },
     ":focus": {
-      "background-color": "#000000"
+      "background-color": "#000000",
+      "color": "#fff"
     }
   },
   "title": {
