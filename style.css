@@ -40,6 +40,7 @@ p {
     font-family: "Crimson Text";
     letter-spacing: 1.1px;
     font-size: 1.1em;
+    margin: 20px 0;
 }
 body {
     margin: 0;
@@ -188,7 +189,7 @@ ul {
 .mini-container {
     /* background: blue; */
     width: 50vw;
-    max-height: 200vh;
+    /* max-height: 200vh; */
     margin: 0 auto;
     line-height: 1.5em;
     /* position: absolute; */
@@ -197,7 +198,7 @@ ul {
 }
 
 .mini-container img {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .title h4 {
@@ -239,9 +240,10 @@ ul {
 /* white space to prevent clipping to bottom navigation */
 .white-space {
     width: 100vw;
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-    /* background: blue; */
+    margin-bottom: 0;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    /* background: green; */
 }
 
 
@@ -304,6 +306,24 @@ video {
 }
 
 
+/* Tablet Optimization */
+@media only screen and (max-width: 980px) {
+
+    .mini-container {
+        /* background: green; */
+        width: 80vw;
+        /* max-height: 200vh; */
+        margin: 0 auto;
+        line-height: 1.5em;
+        /* position: absolute; */
+        margin-top: 3%;
+        font-size: 1.1em;
+    }
+}
+
+
+
+
 
 
 
@@ -333,11 +353,27 @@ video {
     .navigation a {
         float: left;
         text-decoration: none;
-        margin: 1% 2%;
-        font-size: 0.6em;
-        font-weight: 600;
+        margin: 1% 1%;
+        font-size: 1em;
+        /* font-weight: 600; */
         letter-spacing: 1px;
         /* color: #333; */
         color: white;
     }
+
+    .navigation-dark a {
+        /* float: left; */
+        text-decoration: none;
+        margin: 1% 1%;
+        font-size: 1em;
+        /* font-weight: 600; */
+        letter-spacing: 1px;
+     
+    }
+
+
+    /* Article sub-pages */
+
+
+
 }
